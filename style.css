@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*my code*/
+
+
+header {
+    width: 100%;
+    height: 90vh;
+    background-image: url(images/mbanner.jpeg);
+}
+
+header a {
+     color: black;
+}
+
+header a p:hover {
+    color: red;
+
+}
+
+
+header a p {
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+header nav {
+    display: none;
+}
+
+.header-text {
+    margin: 40px 40px;
+    display: grid;
+    place-items: center;
+}
+.header-text p {
+    color: red;
+    font-family: "arial bold";
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 50px;
+}
+
+.header-text h2 {
+    text-align: center;
+    line-height: 20px;
+}
+
+.header-text button {
+    color: red;
+    background-color: yellowgreen;
+    padding: 2px;
+    margin-top: 60px;
+    font-size: 30px;
+    font-family: verdana; 
+    text-shadow: 2px 2px 3px black;   
+}
+
+
+/*only section*/
+.section {
+    margin: 40px 20px;
+}
+.comp {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.comp img {
+    width: 70px;
+    height: 70px;
+}
+
+.section div p {
+    font-family:georgia;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 10px 10px;
+    border-bottom: 1px solid red;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 100px;
+    border-top: 3px solid red;
+}
+
+.footer {
+    display: block;
+    align-items: center;
+}
+.footer p {
+    text-align: center;
+    margin: 10px 0;
+    padding-bottom: 10px;
+}
+
+.footer ul {
+    display: block;
+    text-align: center;
+    
+}
+.footer ul li {
+    display: inline-block;
+    margin: 10px 10px;
+}
+.footer ul li  img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*destop version*/
+@media screen and (min-width: 400px) {
+header {
+    width: 100%;
+    height: 90vh;
+    background-image: url(images/db.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    opacity: 0.8;
+}
+  
+
+header a {
+     color: black;
+     display: inline-block;
+}
+
+header a p:hover {
+    color: red;
+
+}
+
+
+header a p {
+    text-align: left;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+header nav {
+    display:block;
+    float: right;
+}
+
+header nav ul {
+    padding: 20px;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 400;
+    
+}
+
+header nav ul li a:hover {
+    color: red;
+    border-bottom: 1px solid yellow;
+
+}
+
+
+.header-text {
+    margin: 50px 40px 30px 30px;
+    display: grid;
+    place-items: center;
+    padding-top: 60px;
+}
+.header-text p {
+    color: rgb(234, 238, 5);
+    font-family: "arial bold";
+    font-size: 90px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 90px;
+    text-shadow: 1px 1px 5px yellowgreen;
+}
+
+.header-text h2 {
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 9px white;
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.header-text button {
+    color: red;
+    background-color: yellowgreen;
+    margin: 0 auto;
+    font-size: 30px;
+    font-family: verdana; 
+    padding: 0 auto;
+    text-shadow: 2px 2px 3px black;   
+}
+.header-text button:hover {
+    background-color: red;
+    color: yellow;
+}
+
+/*only section*/
+.section {
+    display: flex;
+    justify-content: space-between;
+}
+.comp {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+.comp img {
+    width: 70px;
+    height: 70px;
+}
+
+.section div p {
+    font-family:georgia;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 10px 10px;
+    border-bottom: 1px solid red;
+}
+
+
+/*footer*/
+
+.footer {
+    display: block;
+    align-items: center;
+}
+.footer p {
+    text-align: center;
+    margin: 10px 0;
+    padding-bottom: 10px;
+}
+
+.footer ul {
+    display: block;
+    text-align: center;
+    
+    
+}
+.footer ul li {
+    display: inline-block;
+    padding-left: 50px;
+    justify-content: center;
+    margin: 10px 10px;
+}
+.footer ul li a {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+}
