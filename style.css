@@ -87,8 +87,8 @@ header nav {
 .header-text p {
     color: red;
     font-family: "arial bold";
-    font-size: 60px;
-    font-weight: 100;
+    font-size: 50px;
+    font-weight: 900;
     text-align: center;
     line-height: 50px;
 }
@@ -96,6 +96,7 @@ header nav {
 .header-text h2 {
     text-align: center;
     line-height: 20px;
+    font-weight: 700;
 }
 
 .header-text button {
@@ -165,10 +166,10 @@ footer {
 
 
 /*destop version*/
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
 header {
     width: 100%;
-    height: 90vh;
+    height: 65vh;
     background-image: url(images/db.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
